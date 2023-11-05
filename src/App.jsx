@@ -1,34 +1,17 @@
-// import { useState } from 'react';
-// import reactLogo from './assets/react.svg';
-// import viteLogo from '/vite.svg';
-// import './App.css';
-// import Header from './components/Header';
-
-// function App() {
-// 	const [count, setCount] = useState(0);
-
-// 	return (
-// 		<>
-// 			<Header />
-// 		</>
-// 	);
-// }
-
-// export default App;
 
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import Header from './components/Header';
+import Header from './components/public/Header';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Login from './components/Login';
-import Register from './components/Register';
-import School from './components/School';
-import SearchBar from './components/SearchBar';
-import Student from './components/Student';
-import Partner from './components/Partner';
-import Main from './components/Main';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import School from './pages/School';
+import SearchBar from './pages/SearchBar';
+import Student from './pages/Student';
+import Partner from './pages/Partner';
+import Main from './pages/Main';
 
 function App() {
 	return (
