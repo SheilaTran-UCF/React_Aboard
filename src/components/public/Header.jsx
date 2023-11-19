@@ -74,7 +74,7 @@ function DrawerAppBar(props) {
 							onClick={handleDrawerToggle}
 							sx={{ mr: 2, display: { sm: 'none' } }}
 						>
-							<HomeIcon />
+							{/* <HomeIcon /> */}
 						</IconButton>
 
 						<Typography
@@ -85,7 +85,12 @@ function DrawerAppBar(props) {
 								display: { xs: 'none', sm: 'block' },
 							}}
 						>
-							<img src='/src/assets/logo .png' width='200px' />
+							<a href='/'>
+								<img
+									src='/src/assets/logo .png'
+									width='150px'
+								/>
+							</a>
 						</Typography>
 						<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 							{navItems.map(item => (
