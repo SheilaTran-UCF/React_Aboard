@@ -11,15 +11,14 @@ import SearchBar from './pages/SearchBar';
 import Student from './pages/Student';
 import Partner from './pages/Partner';
 import Main from './pages/Main';
-import Background from './components/background/Background';
-
+import Home from './pages/Home';
 function App() {
 	return (
 		<>
-			<Background />
+			
 			<Header />
 			<Routes>
-				<Route path='/' element={<Main />} />
+				<Route path='/' element={<Home />} />
 
 				<Route path='/student' element={<Student />} />
 				<Route path='/partner' element={<Partner />} />

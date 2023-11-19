@@ -1,4 +1,4 @@
-import MainComponent from '../components/Main/MainComponent';
+
 
 // import Background from '../components/background/Background';
 import { Box, Button } from '@mui/material';
