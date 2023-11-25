@@ -15,12 +15,10 @@ import Home from './pages/Home';
 function App() {
 	return (
 		<>
-			
 			<Header />
 			<Routes>
 				<Route path='/' element={<Home />} />
 
-				<Route path='/student' element={<Student />} />
 				<Route path='/partner' element={<Partner />} />
 				<Route path='/school' element={<School />} />
 				<Route path='/search' element={<SearchBar />} />
