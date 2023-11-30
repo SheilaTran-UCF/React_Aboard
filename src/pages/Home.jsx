@@ -3,13 +3,13 @@ import VideoBanner from '../components/Homecomponents/VideoBanner';
 import SecondCompoent from '../components/Homecomponents/SecondCompoent';
 import Footer from '../components/Homecomponents/Footer';
 import ThirdComponent from '../components/Homecomponents/ThirdComponent';
-import NextComponent from '../components/Homecomponents/NextComponent';
+import SwiperSlice from '../components/Homecomponents/SwiperSlice';
 
 const Home = () => {
 	return (
 		<>
 			<VideoBanner />
-			<NextComponent />
+			<SwiperSlice/>
 			<SecondCompoent />
 			<ThirdComponent />
 			<Footer />
