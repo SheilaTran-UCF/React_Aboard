@@ -29,7 +29,7 @@ const SwiperSlice = () => {
             className="mySwiper">
             <SwiperSlide className="flex  items-center">
               <div>
-               <h1>ádjksahj</h1>
+                <h1>ádjksahj</h1>
               </div>
               <img
                 src="https://toquoc.mediacdn.vn/280518851207290880/2022/12/22/12-1671683430473740576022.jpg"
