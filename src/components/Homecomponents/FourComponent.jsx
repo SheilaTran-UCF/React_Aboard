@@ -6,7 +6,7 @@ const FourComponent = () => {
 	return (
 		<>
 			<div>
-				<div className='font-bold '>
+				<div className='font-bold text-center'>
 					We Help Students Get Admitted Into the Best International
 					Educational Institutions
 				</div>
@@ -21,7 +21,7 @@ const FourComponent = () => {
 				>
 					<a href='/'>
 						<img
-							className='flex  items-center'
+							className='items-center'
 							// src='/src/assets/window.gif'
 							src={windowPic}
 							width='450px'

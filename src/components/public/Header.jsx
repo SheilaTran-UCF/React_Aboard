@@ -94,9 +94,9 @@ function DrawerAppBar(props) {
 						</Typography>
 						<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 							{navItems.map(item => (
-								<Button key={item} sx={{ color: '#fff000' }}>
+								<Button variant='contained' key={item} sx={{ color: '#fff000' }}>
 									<Link
-										className='text-[#fff]'
+										className='text-[#fff] '
 										to={item.link}
 									>
 										{item.text}
@@ -108,9 +108,10 @@ function DrawerAppBar(props) {
 						<div className='mx-[100px] flex'>
 							<div className=''>
 								<IconButton
-									className='icon-menu'
+									className='icon-menu '
 									aria-label='open drawer'
 									edge='start'
+								
 									onClick={handleDrawerToggle}
 									sx={{ mr: 2 }}
 								>
@@ -119,10 +120,10 @@ function DrawerAppBar(props) {
 							</div>
 
 							<div className='mx-2'>
-								<Button variant='outlined'>Login</Button>
+								<Button variant='contained'>Login</Button>
 							</div>
 							<div className='mx-2'>
-								<Button variant='outlined'>Register</Button>
+								<Button variant='contained'>Register</Button>
 							</div>
 						</div>
 					</Toolbar>
