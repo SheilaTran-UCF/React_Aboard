@@ -22,7 +22,7 @@ const VideoBanner = () => {
         </VideoElement>
 
         <div className="absolute top-[30%]">
-          <h1 className="font-bold mx-[10%] max-w-[45%] text-[#fff] text-[60px]">
+          <h1 className="font-bold mx-[10%] max-w-[45%] text-[#fff] text-[50px]">
             {" "}
             We Are on a Mission to Educate the World
           </h1>
