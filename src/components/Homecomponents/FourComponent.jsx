@@ -1,10 +1,11 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import windowPic from '../../assets/window.gif';
 
 const FourComponent = () => {
 	return (
 		<>
-			<div >
+			<div>
 				<div className='font-bold '>
 					We Help Students Get Admitted Into the Best International
 					Educational Institutions
@@ -21,7 +22,8 @@ const FourComponent = () => {
 					<a href='/'>
 						<img
 							className='flex  items-center'
-							src='/src/assets/window.gif'
+							// src='/src/assets/window.gif'
+							src={windowPic}
 							width='450px'
 						/>
 					</a>
