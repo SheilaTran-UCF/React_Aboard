@@ -5,6 +5,7 @@ import Footer from '../components/Homecomponents/Footer';
 import ThirdComponent from '../components/Homecomponents/ThirdComponent';
 import SwiperSlice from '../components/Homecomponents/SwiperSlice';
 import FourComponent from '../components/Homecomponents/FourComponent';
+import SlideVideo from '../components/Homecomponents/SlideVideo';
 
 const Home = () => {
 	return (
@@ -14,6 +15,7 @@ const Home = () => {
 			<SecondCompoent />
 			<ThirdComponent />
 			<FourComponent />
+			<SlideVideo/>
 			<Footer />
 		</>
 	);
