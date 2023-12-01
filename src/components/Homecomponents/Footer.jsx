@@ -13,6 +13,12 @@
 // export default Footer;
 
 import * as React from 'react';
+import {
+	FaFacebook,
+	FaTwitter,
+	FaInstagram,
+	FaLinkedinIn,
+} from 'react-icons/fa';
 import { styled } from '@mui/material/styles';
 import MuiGrid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
@@ -36,57 +42,72 @@ export default function Footer() {
 			<div className='col-span-3'>
 				<ul>
 					<a href='/'>
-						<img src='/src/assets/logo .png' width='150px' />
+						<img
+							src='/src/assets/logo .png'
+							width='120px'
+							className='py-5'
+						/>
 					</a>
 					<li>101 Frederick St,</li>
 					<li>Kitchenqr, ON</li>
 					<li>N2H 6R3</li>
 
-					<li className='font-normal md:font-bold'>Get Social</li>
-
-					<li>In </li>
+					<div className='font-normal md:font-bold py-8'>
+						{' '}
+						<li>Get Social</li>
+						<div className='flex justify-between pt-4 max-w-[100px] w-full'>
+							<FaTwitter className='cursor-pointer' size={10} />
+							<FaFacebook className='cursor-pointer' size={10} />
+							<FaInstagram className='cursor-pointer' size={10} />
+							<FaLinkedinIn
+								className='cursor-pointer'
+								size={10}
+							/>
+						</div>
+					</div>
 				</ul>
 			</div>
-			<div className='col-span-3'>
+			<div className='col-span-3 py-5'>
 				<ul>
-					<div className='font-normal md:font-bold'>
+					<div className='font-normal md:font-bold py-5'>
 						<li>Students</li>
-						<li>Schools</li>
+						<li className='py-2'>Schools</li>
 						<li>Recruiters</li>
 					</div>
 
 					<div>
-						<li className='font-normal md:font-bold'>Discover</li>
+						<li className='font-normal md:font-bold py-2'>
+							Discover
+						</li>
 						<li>Discover Programs</li>
-						<li>Discover Schools</li>
+						<li className='py-2'>Discover Schools</li>
 						<li>Register</li>
 					</div>
 				</ul>
 			</div>
-			<div className='col-span-3'>
+			<div className='col-span-3 py-8'>
 				<ul>
-					<li className='font-normal md:font-bold'>About</li>
+					<li className='font-normal md:font-bold py-2'>About</li>
 					<li>Our Story</li>
-					<li>Carrers</li>
+					<li className='py-2'>Carrers</li>
 					<li>Blog</li>
-					<li>Press</li>
+
+					<li className='py-2'>Press</li>
 					<li>Life</li>
-					<li>LeaderShip</li>
+					<li className='py-2'>LeaderShip</li>
 					<li>Contact</li>
 				</ul>
 			</div>
-			<div className='col-span-3'>
+			<div className='col-span-3 py-8'>
 				<ul>
-					<li className='font-normal md:font-bold'>Resources</li>
+					<li className='font-normal md:font-bold py-2'>Resources</li>
 					<li>UK Resources</li>
-					<li>AU Resource</li>
-					<li className='font-normal md:font-bold'>Legal</li>
-					<li>Privacy & cookies</li>
-					<li>Policy</li>
-					<li>Term & conditions</li>
+					<li className='py-2'>AU Resource</li>
+					<li className='font-normal md:font-bold py-2'>Legal</li>
+					<li>Privacy & cookies Policy</li>
+					<li className='py-2'>Term & conditions</li>
 					<li>ApplyBoard Fees</li>
-					<li>Modern Slavery</li>
-					<li>Statement</li>
+					<li className='py-2'>Modern Slavery</li>
 				</ul>
 			</div>
 			////////////////////////

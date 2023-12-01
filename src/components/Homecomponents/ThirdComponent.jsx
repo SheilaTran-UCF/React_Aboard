@@ -1,15 +1,4 @@
-// import React from 'react'
 
-// const ThirdComponent = () => {
-//     const data=[
-//         {}
-//     ]
-//   return (
-//     <div>Get started With ApplyBoard</div>
-//   )
-// }
-
-// export default ThirdComponent
 
 import * as React from 'react';
 import Card from '@mui/material/Card';
@@ -17,6 +6,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import pic1Img from '../../assets/pic1.jpeg';
+import pic2Img from '../../assets/pic2.jpeg';
+import pic3Img from '../../assets/pic3.jpeg';
 
 export default function ThirdComponent() {
 	const data = [
@@ -28,6 +20,8 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2023',
 			plant: 'Máy bay',
 			buttonName: 'Student Registration',
+			pic:{pic1Img}
+			
 		},
 		{
 			_id: '6556b10507b48bd6661d24888',
@@ -36,6 +30,8 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2024',
 			plant: 'Máy bay',
 			buttonName: 'Partner Inquiry',
+			pic:{pic2Img}
+			
 		},
 		{
 			_id: '6556b10507b48bd6661d7888',
@@ -44,20 +40,27 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2025',
 			plant: 'Máy bay',
 			buttonName: 'Recruiter Registration',
+			pic:{pic3Img}
 		},
 	];
 	return (
-		<div className='grid grid-cols-12 gap-4 p-4'>
+		
+		<div className="text-center">
+			<h1 className="text-center font-bold">Get started With ApllyBoard</h1>
+			<div className='grid grid-cols-12 gap-4 p-4 text-center'>
+			
 			{data.map(value => {
 				return (
 					<>
-						<Card className='col-span-3'>
+						<Card className='col-span-3 '>
+						{/* {value.pic} */}
 							<CardMedia
 								sx={{ height: 140 }}
 								image='/static/images/cards/contemplative-reptile.jpg'
 								title='green iguana'
+							
 							/>
-							<CardContent>
+							<CardContent className=''>
 								<Typography
 									gutterBottom
 									variant='h5'
@@ -83,6 +86,7 @@ export default function ThirdComponent() {
 					</>
 				);
 			})}
+		</div>
 		</div>
 	);
 }
