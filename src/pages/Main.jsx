@@ -1,5 +1,3 @@
-
-
 // import Background from '../components/background/Background';
 import { Box, Button } from '@mui/material';
 const Main = () => {
@@ -19,7 +17,7 @@ const Main = () => {
 				}}
 			>
 				<h1 class='elementor-heading-title elementor-size-default'>
-					We Are on a Mission to Educate the World
+					We Are on a Mission to Educate the World hello
 				</h1>
 
 				<Button variant='outlined'>
