@@ -5,13 +5,13 @@ import windowPic from '../../assets/window.gif';
 const FourComponent = () => {
 	return (
 		<>
-			<div>
-				<div className='font-bold text-center'>
-					We Help Students Get Admitted Into the Best International
-					Educational Institutions
+			<div className='container my-0 mx-auto py-[10px]' >
+				<div className='font-bold text-[30px] text-center'>
+					<p>We Help Students Get Admitted Into the Best</p>
+					<p>International Educational Institutions</p>
 				</div>
 
-				<Typography
+				{/* <Typography
 					variant='h4'
 					component='div'
 					sx={{
@@ -27,7 +27,8 @@ const FourComponent = () => {
 							width='450px'
 						/>
 					</a>
-				</Typography>
+				</Typography> */}
+				<img src={windowPic} width='100%' />
 			</div>
 		</>
 	);

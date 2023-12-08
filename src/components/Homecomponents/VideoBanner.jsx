@@ -1,6 +1,9 @@
 import React from "react";
 import { styled } from "@mui/styles";
 import sky from "../../assets/sky.mp4";
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
 const VideoBanner = () => {
   const VideoContainer = styled("div")({
     top: 0,
@@ -26,6 +29,12 @@ const VideoBanner = () => {
             {" "}
             We Are on a Mission to Educate the World
           </h1>
+
+          <Button className="mx-[10%] border-sky-600 text-sky-600 max-w-[45%] py-3 px-7" variant="outlined">I am a student exploring studying abroad</Button>
+          <Stack className="mx-[10%] my-4" spacing={2} direction="row">
+          <Button variant="outlined">I am a recruitment partner</Button>
+          <Button variant="outlined">I work at a school</Button>
+          </Stack>
         </div>
       </VideoContainer>
     </>

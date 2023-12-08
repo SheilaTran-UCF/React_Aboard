@@ -68,13 +68,14 @@ function DrawerAppBar(props) {
 				<Container>
 					<Toolbar>
 						<IconButton
-							color='inherit'
+							color='#000'
 							aria-label='open drawer'
 							edge='start'
 							onClick={handleDrawerToggle}
 							sx={{ mr: 2, display: { sm: 'none' } }}
 						>
 							{/* <HomeIcon /> */}
+							<MenuIcon/>
 						</IconButton>
 
 						<Typography
@@ -93,28 +94,28 @@ function DrawerAppBar(props) {
 							</a>
 						</Typography>
 						<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-							{navItems.map(item => (
-								<Button variant='contained' key={item} sx={{ color: '#fff000' }}>
+							{navItems.map((item )=> (
+								
 									<Link
-										className='text-[#fff] '
+										className='text-[#000] mx-[10px]'
 										to={item.link}
 									>
 										{item.text}
 										
 									</Link>
-								</Button>
+								
 							))}
 						</Box>
 
 						<div className='mx-[100px] flex'>
 							<div className=''>
 								<IconButton
-									className='icon-menu '
+									 className='icon-menu '
 									aria-label='open drawer'
 									edge='start'
 								
 									onClick={handleDrawerToggle}
-									sx={{ mr: 2 }}
+									sx={{ mr: 2, display:{sm:'none'} }}
 								>
 									<MenuIcon />
 								</IconButton>

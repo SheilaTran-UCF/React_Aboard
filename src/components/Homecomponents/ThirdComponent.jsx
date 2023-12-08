@@ -20,7 +20,7 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2023',
 			plant: 'Máy bay',
 			buttonName: 'Student Registration',
-			pic:{pic1Img}
+			pic:pic1Img
 			
 		},
 		{
@@ -30,7 +30,7 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2024',
 			plant: 'Máy bay',
 			buttonName: 'Partner Inquiry',
-			pic:{pic2Img}
+			pic:pic2Img
 			
 		},
 		{
@@ -40,7 +40,7 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2025',
 			plant: 'Máy bay',
 			buttonName: 'Recruiter Registration',
-			pic:{pic3Img}
+			pic:pic3Img
 		},
 	];
 	return (
@@ -52,14 +52,15 @@ export default function ThirdComponent() {
 			{data.map(value => {
 				return (
 					<>
-						<Card className='col-span-3 '>
-						{/* {value.pic} */}
-							<CardMedia
+					{/* responsive */}
+						<Card className='col-span-12 md:col-span-4 '> 
+						<img src={value.pic} width='100%'/>
+							{/* <CardMedia
 								sx={{ height: 140 }}
 								image='/static/images/cards/contemplative-reptile.jpg'
 								title='green iguana'
 							
-							/>
+							/> */}
 							<CardContent className=''>
 								<Typography
 									gutterBottom
