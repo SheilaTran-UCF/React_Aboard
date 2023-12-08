@@ -5,8 +5,8 @@ import windowPic from '../../assets/window.gif';
 const FourComponent = () => {
 	return (
 		<>
-			<div className='container my-0 mx-auto py-[10px]' >
-				<div className='font-bold text-[30px] text-center'>
+			<div className='container my-0 mx-auto py-[10px] ' >
+				<div className='font-bold text-[30px] text-center  '>
 					<p>We Help Students Get Admitted Into the Best</p>
 					<p>International Educational Institutions</p>
 				</div>

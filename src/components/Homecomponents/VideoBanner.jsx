@@ -19,7 +19,7 @@ const VideoBanner = () => {
   });
   return (
     <>
-      <VideoContainer>
+      <VideoContainer >
         <VideoElement autoPlay muted={true} loop>
           <source src={sky} type="video/mp4" />
         </VideoElement>

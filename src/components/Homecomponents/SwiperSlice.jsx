@@ -11,7 +11,7 @@ import 'swiper/css/effect-coverflow';
 const SwiperSlice = () => {
 	return (
 		<>
-			<div className=' flex justify-center'>
+			<div className=' flex justify-center col-span-12 md:col-span-4 '>
 				
 				<div className='w-1/2 py-8'>
 				<p className='font-bold text-[20px]'>A Platform That Supports You End-to-End</p>
