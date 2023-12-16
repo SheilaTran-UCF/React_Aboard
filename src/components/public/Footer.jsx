@@ -39,7 +39,7 @@ import Drawer from '@mui/material/Drawer';
 export default function Footer() {
 	return (
 		<>
-		<div className="bg-sky-500 " >
+		<div className="bg-[#004dc0]" >
 		<div className='grid grid-cols-12 gap-4  py-5 px-11 text-white text-[10px] my-4 ' >
 				<div className='col-span-3 mx-10'>
 					<ul>

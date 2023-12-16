@@ -121,12 +121,15 @@ function DrawerAppBar(props) {
 								</IconButton>
 							</div>
 
-							<div className='mx-2'>
-								<Button variant='contained'>Login</Button>
+							<div className='mx-2 bg-[#004dc0] py-[7px] px-[20px] rounded-md'>
+							<Link to='/login' variant='contained'>Login</Link>
 							</div>
-							<div className='mx-2'>
-								<Button variant='contained'>Register</Button>
+
+							<div className='mx-2 bg-[#004dc0] py-[7px] px-[20px] rounded-md'>
+							<Link to='/register' variant='contained'>Register</Link>
 							</div>
+
+							
 						</div>
 					</Toolbar>
 				</Container>

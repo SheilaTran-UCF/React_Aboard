@@ -15,7 +15,7 @@ const Home = () => {
 			{/* <SecondCompoent /> */}
 			<ThirdComponent />
 			<FourComponent />
-			<SlideVideo/>
+			{/* <SlideVideo/> */}
 			<Footer />
 		</>
 	);
