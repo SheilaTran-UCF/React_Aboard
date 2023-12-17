@@ -1,16 +1,3 @@
-// import React from 'react';
-
-// const Footer = () => {
-// 	return <div className='grid grid-cols-12 gap-4 p-4'>
-//     <Card className='col-span-3'>Hi</Card>
-//     <Card className='col-span-3'>Hi</Card>
-//     <Card className='col-span-3'>Hi</Card>
-//     <Card className='col-span-3'>Hi</Card>
-
-//     </div>;
-// };
-
-// export default Footer;
 
 import * as React from 'react';
 import {

@@ -4,6 +4,7 @@ import imgRight from '../assets/fs0a437k43QXmImKU5d7.png';
 import logo from '../assets/logo .png';
 import Button from '@mui/joy/Button';
 import Checkbox from '@mui/joy/Checkbox';
+import { FaFacebook, FaGoogle, FaApple } from 'react-icons/fa';
 
 const Login = () => {
 	console.log(imgRight);
@@ -18,20 +19,35 @@ const Login = () => {
 
 						<div></div>
 						<h2 className='py-5'>Log In</h2>
-						<p >Email</p>
-						<Input className='border-2 border-[#bbbbbb] border-solid text-[10px]'
+
+						
+						<p>Email</p>
+						<Input
+							className='border-2 border-[#bbbbbb] border-solid text-[10px]'
 							placeholder='Enter Email'
 							required
 						/>
 						<p>Password</p>
-						<Input placeholder='Enter Password' type='password'  />
+						<Input
+							className='border-2 border-[#bbbbbb] border-solid text-[10px]'
+							placeholder='Enter Password'
+							type='password'
+						/>
 
+						<p className='flex items-center'>
+							<input className='mr-2' type='checkbox' /> Remember
+							Me
+						</p>
 
-            <Checkbox className='py-[4]' label="Remember me" defaultChecked />
-            <br/>
-						<Button type='submit'>Login</Button>
+						<button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white '>
+							Sign In
+						</button>
+
+						<div className='flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row'></div>
 					</div>
 				</div>
+
+				{/* ---------------------------------------------------------------- */}
 
 				<div className='col-span-6 '>
 					<img src={imgRight} width='100%' />
