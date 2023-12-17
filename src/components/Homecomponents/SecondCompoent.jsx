@@ -298,9 +298,7 @@ export default function SecondCompoent() {
       {data.map((value) => {
         return (
           <>
-          {/* ?????? */}
-            {/* <Card className="col-span-3 "> */}
-            <Card className="col-span-12 md:col-span-4  ">
+            <Card className="col-span-3">
               <CardMedia
                 sx={{ height: 140 }}
                 image="/static/images/cards/contemplative-reptile.jpg"

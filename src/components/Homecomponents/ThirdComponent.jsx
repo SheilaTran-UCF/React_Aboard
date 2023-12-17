@@ -52,15 +52,9 @@ export default function ThirdComponent() {
 			{data.map(value => {
 				return (
 					<>
-					{/* responsive */}
-						<Card className='col-span-12 md:col-span-4 '> 
-						<img src={value.pic} width='100%'/>
-							{/* <CardMedia
-								sx={{ height: 140 }}
-								image='/static/images/cards/contemplative-reptile.jpg'
-								title='green iguana'
-							
-							/> */}
+						<Card className='col-span-12 md:col-span-4 '>
+						{/* {value.pic} */}
+							<img src={value.pic} width='100%'/>
 							<CardContent className=''>
 								<Typography
 									gutterBottom
