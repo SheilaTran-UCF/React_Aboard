@@ -13,21 +13,21 @@ const Login = () => {
 		<>
 			<div className='grid grid-cols-12 gap-4'>
 				<div className='col-span-6 flex justify-center  '>
-					<div className='max-w-[70%]'>
-						<div className='flex text-center justify-center '>
-							<img src={logo} className='max-w-[50%]' />
+					<div className='max-w-[55%]'>
+						<div className='flex'>
+							<img src={logo} className='max-w-[30%]' />
 						</div>
 
 						<div></div>
 						<h2 className='py-5'>Log In</h2>
 
-						<p>Email</p>
+						<p className='py-2 text-[12px]'>Email</p>
 						<Input
 							className='border-2 border-[#bbbbbb] border-solid text-[10px]'
 							placeholder='Enter Email'
 							required
 						/>
-						<p>Password</p>
+						<p className='py-2 text-[12px]'>Password</p>
 						<Input
 							className='border-2 border-[#bbbbbb] border-solid text-[10px]'
 							placeholder='Enter Password'
@@ -47,39 +47,64 @@ const Login = () => {
 						<div>
 							<Divider>or</Divider>
 						</div>
-						<div className='relative py-3' >
-							<div className='absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300'>
-								<i className='fa-solid fa-envelope-open'></i>
+						<div className='relative py-3'>
+							<div className='absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300 '>
+								<FaGoogle
+									className='cursor-pointer my-2'
+									size={25}
+								/>
 							</div>
-							<button className='bg-gradient-to-r from-blue-400 to-cyan-200 w-full font-semibold rounded-full py-2'>
+							<button className='bg-sky-400 w-full font-semibold rounded-full py-2 text-[12px]'>
 								Log In with Google
 							</button>
 						</div>
 
 						<div className='relative py-3'>
 							<div className='absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300'>
-								<i className='fa-solid fa-envelope-open'></i>
+								<FaApple
+									className='cursor-pointer my-2'
+									size={25}
+								/>
 							</div>
-							<button className='bg-gradient-to-r from-blue-400 to-cyan-200 w-full font-semibold rounded-full py-2'>
+							<button className='bg-sky-400 w-full font-semibold rounded-full py-2 text-[12px]'>
 								Log In with Apple
 							</button>
 						</div>
 
 						<div className='relative py-3'>
 							<div className='absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300'>
-								<i className='fa-solid fa-envelope-open'></i>
+								<FaFacebook
+									className='cursor-pointer my-2 '
+									size={25}
+								/>
 							</div>
-							<button className='bg-gradient-to-r from-blue-400 to-cyan-200 w-full font-semibold rounded-full py-2'>
+							<button className='bg-sky-400 w-full font-semibold rounded-full py-2 text-[12px]'>
 								Log In with Facebook
 							</button>
 						</div>
 
-
-						<div class="text-dull-white border-t border-white-light pt-4 space-y-4 text-sm">
-                <p>Don't have an account? <a class="text-neon-blue font-semibold cursor-pointer">Sign up</a></p>
-                <p>Forgot password? <a class="text-neon-blue font-semibold cursor-pointer">Reset password</a></p>
-                <p>Don't have a password yet? <a class="text-neon-blue font-semibold cursor-pointer">Set password</a></p>
-            </div>
+						<div class='text-dull-white border-t border-white-light pt-4 space-y-2 text-[10px]'>
+							<p>
+								Don't have an account?{' '}
+								<a className='text-neon-blue font-semibold cursor-pointer'>
+									Sign up
+								</a>
+							</p>
+							<p>
+								Forgot password?{' '}
+								<a className='text-neon-blue font-semibold cursor-pointer'>
+									Reset password
+								</a>
+							</p>
+							<p>
+								Don't have a password yet?{' '}
+								<a className='text-neon-blue font-semibold cursor-pointer '>
+									Set password
+								</a>
+							</p>
+							<br />
+							<br />
+						</div>
 					</div>
 				</div>
 
