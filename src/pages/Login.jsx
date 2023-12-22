@@ -13,7 +13,7 @@ const Login = () => {
 		<>
 			<div className='grid grid-cols-12 gap-4'>
 				<div className='col-span-6 flex justify-center  '>
-					<div className='max-w-[55%]'>
+					<div className='max-w-[50%]'>
 						<div className='flex'>
 							<img src={logo} className='max-w-[30%]' />
 						</div>
@@ -83,7 +83,9 @@ const Login = () => {
 							</button>
 						</div>
 
-						<div class='text-dull-white border-t border-white-light pt-4 space-y-2 text-[10px]'>
+						{/* ----------------- */}
+
+						<div className='text-dull-white border-t border-white-light pt-4 space-y-2 text-[10px] left-12'>
 							<p>
 								Don't have an account?{' '}
 								<a className='text-neon-blue font-semibold cursor-pointer'>
