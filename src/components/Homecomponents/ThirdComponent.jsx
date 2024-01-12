@@ -1,5 +1,7 @@
 
-
+import { useParams } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
+import Container from '@mui/material/Container';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -11,6 +13,13 @@ import pic2Img from '../../assets/pic2.jpeg';
 import pic3Img from '../../assets/pic3.jpeg';
 
 export default function ThirdComponent() {
+
+	let location = useLocation();
+	console.log(location.pathname)
+
+	let nameLocal = location.pathname;
+	
+	
 	const data = [
 		{
 			listClient: [],
@@ -20,7 +29,8 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2023',
 			plant: 'Máy bay',
 			buttonName: 'Student Registration',
-			pic:pic1Img
+			pic:pic1Img,
+			link: '/StudentRegister'
 			
 		},
 		{
@@ -30,7 +40,8 @@ export default function ThirdComponent() {
 			dateStart: '15/02/2024',
 			plant: 'Máy bay',
 			buttonName: 'Partner Inquiry',
-			pic:pic2Img
+			pic:pic2Img,
+			
 			
 		},
 		{
@@ -46,12 +57,16 @@ export default function ThirdComponent() {
 	return (
 		
 		<div className="text-center">
-			<h1 className="text-center font-bold">Get started With ApllyBoard</h1>
+			{
+				nameLocal === '/register' ? '' : <h1 className="text-center font-bold">Get started With ApllyBoard</h1>
+			}
+			
 			<div className='grid grid-cols-12 gap-4 p-4 text-center'>
 			
 			{data.map(value => {
 				return (
 					<>
+					 {/* <Container maxWidth="xl"> */}
 						<Card className='col-span-12 md:col-span-4 '>
 						{/* {value.pic} */}
 							<img src={value.pic} width='100%'/>
@@ -73,11 +88,12 @@ export default function ThirdComponent() {
 								</Typography>
 							</CardContent>
 							<CardActions className='flex justify-center'>
-								<Button size='small' variant='contained'>
+								<Link to={value.link}  className='bg-[#0065e1] text-[#ffffff] px-[15px] py-[8px] rounded-[8px]'>
 									{value.buttonName}
-								</Button>
+								</Link>
 							</CardActions>
 						</Card>
+						{/* </Container> */}
 					</>
 				);
 			})}

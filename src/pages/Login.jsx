@@ -2,6 +2,9 @@ import React from 'react';
 import Input from '@mui/joy/Input';
 import imgRight from '../assets/fs0a437k43QXmImKU5d7.png';
 import logo from '../assets/logo .png';
+import apple_logo from '../assets/apple_logo.png';
+import google_logo from '../assets/google_logo.png';
+import facebook from '../assets/facebook1.png';
 import Button from '@mui/joy/Button';
 import Checkbox from '@mui/joy/Checkbox';
 import { FaFacebook, FaGoogle, FaApple } from 'react-icons/fa';
@@ -29,7 +32,7 @@ const Login = () => {
 						/>
 						<p className='py-2 text-[12px]'>Password</p>
 						<Input
-							className='border-2 border-[#bbbbbb] border-solid text-[10px]'
+							className='border-2 border-[#bbbbbb] border-solid text-[10px] '
 							placeholder='Enter Password'
 							type='password'
 						/>
@@ -39,15 +42,19 @@ const Login = () => {
 							Me
 						</p>
 
-						<button class='bg-gradient-to-r from-blue-400 to-cyan-200 w-full font-semibold rounded-full py-2'>
+						{/* <button class='bg-gradient-to-r from-blue-400 to-cyan-200 w-full font-semibold rounded-full py-2'>
 							Sign In
+						</button> */}
+
+						<button className='bg-[#0064E1] w-full text-[#ffffff] py-[8px] rounded-[8px]'>
+							Log In
 						</button>
 
 						<div className='flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row'></div>
 						<div>
 							<Divider>or</Divider>
 						</div>
-						<div className='relative py-3'>
+						{/* <div className='relative py-3'>
 							<div className='absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300 '>
 								<FaGoogle
 									className='cursor-pointer my-2'
@@ -57,9 +64,9 @@ const Login = () => {
 							<button className='bg-sky-400 w-full font-semibold rounded-full py-2 text-[12px]'>
 								Log In with Google
 							</button>
-						</div>
+						</div> */}
 
-						<div className='relative py-3'>
+						{/* <div className='relative py-3'>
 							<div className='absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300'>
 								<FaApple
 									className='cursor-pointer my-2'
@@ -69,9 +76,9 @@ const Login = () => {
 							<button className='bg-sky-400 w-full font-semibold rounded-full py-2 text-[12px]'>
 								Log In with Apple
 							</button>
-						</div>
+						</div> */}
 
-						<div className='relative py-3'>
+						{/* <div className='relative py-3'>
 							<div className='absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300'>
 								<FaFacebook
 									className='cursor-pointer my-2 '
@@ -81,9 +88,35 @@ const Login = () => {
 							<button className='bg-sky-400 w-full font-semibold rounded-full py-2 text-[12px]'>
 								Log In with Facebook
 							</button>
-						</div>
+						</div> */}
 
 						{/* ----------------- */}
+
+						<div>
+							<button className='flex w-[100%] border border-[#c3c3c3] py-[7px] rounded-[8px] items-center mb-[15px]'>
+								<img
+									src={google_logo}
+									className='max-w-[100%] ml-[15px] mr-[30px]'
+								/>
+								<span className='text-xs'>Log In with google</span>
+							</button>
+
+							<button className='flex w-[100%] border border-[#c3c3c3] py-[7px] rounded-[8px] items-center mb-[15px]'>
+								<img
+									src={apple_logo}
+									className='max-w-[100%] ml-[15px] mr-[30px]'
+								/>
+								<span className='text-xs'>Log In with Apple</span>
+							</button>
+
+							<button className='flex w-[100%] border border-[#c3c3c3] py-[7px] rounded-[8px] items-center'>
+								<img
+									src={facebook}
+									className='w-[27px]   ml-[15px] mr-[25px]'
+								/>
+								<span className='text-xs'>Log In with Facebook</span>
+							</button>
+						</div>
 
 						<div className='text-dull-white border-t border-white-light pt-4 space-y-2 text-[10px] left-12'>
 							<p>

@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import School from './pages/School';
+import StudentRegister from './pages/StudentRegister';
 import SearchBar from './pages/SearchBar';
 import Student from './pages/Student';
 import Partner from './pages/Partner';
@@ -24,6 +25,9 @@ function App() {
 				<Route path='/search' element={<SearchBar />} />
 				<Route path='/login' element={<Login />} />
 				<Route path='/register' element={<Register />} />
+				<Route path='/StudentRegister' element={<StudentRegister />} />
+
+
 			</Routes>
 		</>
 	);
