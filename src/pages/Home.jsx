@@ -12,7 +12,7 @@ const Home = () => {
 		<>
 			<VideoBanner />
 			<SwiperSlice />
-			<ThirdComponent />
+			<ThirdComponent title='Get started With ApllyBoard'/>
 			<FourComponent />
 			<SlideVideo/>
 			<Footer />

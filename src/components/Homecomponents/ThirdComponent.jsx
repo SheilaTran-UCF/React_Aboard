@@ -12,14 +12,8 @@ import pic1Img from '../../assets/pic1.jpeg';
 import pic2Img from '../../assets/pic2.jpeg';
 import pic3Img from '../../assets/pic3.jpeg';
 
-export default function ThirdComponent() {
+export default function ThirdComponent(props) {
 
-	let location = useLocation();
-	console.log(location.pathname)
-
-	let nameLocal = location.pathname;
-	
-	
 	const data = [
 		{
 			listClient: [],
@@ -57,10 +51,7 @@ export default function ThirdComponent() {
 	return (
 		
 		<div className="text-center">
-			{
-				nameLocal === '/register' ? '' : <h1 className="text-center font-bold">Get started With ApllyBoard</h1>
-			}
-			
+			<h1 className="text-center font-bold">{props.title}</h1>
 			<div className='grid grid-cols-12 gap-4 p-4 text-center'>
 			
 			{data.map(value => {

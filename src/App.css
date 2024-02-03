@@ -24,3 +24,28 @@ border-color: #fff !important;
 .swiper {
     height: 400px !important;
 }
+.imageSection{
+    background-image: url('./assets/bg.png');
+    background-size:cover;
+}
+.imageItem{
+    width: 200px !important;
+
+}
+img{
+    max-width: auto !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    border-bottom: none !important;
+    background-color: #0066e1;
+    color: #fff !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    width: 18% !important;
+}.css-1ujnqem-MuiTabs-root {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+}

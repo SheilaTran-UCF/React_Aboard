@@ -3,9 +3,8 @@ import student from '../assets/student1.png';
 import apple_logo from '../assets/apple_logo.png';
 import google_logo from '../assets/google_logo.png';
 import facebook from '../assets/facebook1.png';
-// import { FaBeer } from "react-icons/fa";
-// import { IoMdPerson } from "react-icons/io";
-// import { IoPersonOutline } from "react-icons/io5";
+import { IoPerson } from "react-icons/io5";
+
 
 import { FaBeer } from "react-icons/fa";
 // import { IoPerson } from "react-icons/io5";
@@ -49,9 +48,14 @@ const StudentRegister = () => {
 								
 								</h2>
 
-								<div className='flex justify-between'>
-								<FaBeer />
-									<input className='text-xs' placeholder='First Name' type='text'/>
+								<div className='flex justify-between relative'>
+
+									<div className='absolute pl-[10px] top-[20%]'><i class="fa-solid fa-user"></i></div>
+									<div><input className='text-xs pl-[60px] py-[10px] ' placeholder='First Name' type='text'/></div>
+
+								
+							
+									
 								</div>
 							</form>
 						</div>

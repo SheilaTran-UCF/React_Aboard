@@ -7,18 +7,9 @@ const Register = () => {
 	return (
 		<>
 			{/* <Header /> */}
-			<h5 className='text-[30px] py-5 text-center justify-center font-bold'>
-				ApplyBoard Registration
-			</h5>
-			<p className='text-center text-[15px]'>
-				Ready to get started with ApplyBoard?
-			</p>
+			
 
-			<p className='text-center text-[15px]'>
-				Register today to find out how we can support you.
-			</p>
-
-			<ThirdComponent />
+			<ThirdComponent title='Appy Broad Registration'/>
 			<div className='relative py-5 text-center justify-center left-40 w-50 '>
 				<div className='absolute bg-white-medium p-2 left-40  flex  text-blue-500 py-5'>
 					<h5>Already a Registerd User?</h5>
