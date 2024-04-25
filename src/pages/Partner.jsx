@@ -1,7 +1,13 @@
 import React from 'react';
+import PageOneRecruiment from '../components/Recruiment/PageOneRecruiment';
 
 const Partner = () => {
-	return <div>Partner</div>;
+	return (
+		<>
+			
+			<PageOneRecruiment />
+		</>
+	);
 };
 
 export default Partner;
