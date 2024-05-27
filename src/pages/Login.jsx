@@ -41,6 +41,7 @@ const Login = () => {
 							<input className='mr-2 ' type='checkbox' /> Remember
 							Me
 						</p>
+						{/*  */}
 
 						{/* <button class='bg-gradient-to-r from-blue-400 to-cyan-200 w-full font-semibold rounded-full py-2'>
 							Sign In
