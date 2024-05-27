@@ -16,7 +16,7 @@ const PageOneRecruiment = () => {
 						education dreams. .
 					</p>
 					<button className='bg-[#0064E1] px-[5px] py-[5px] rounded-[8px] hover:bg-sky-700 my-[50px] text-[#ffffff]'>
-						Pertner with us
+						Partner with us
 					</button>
 				</div>
 				<div className='col-span-12 md:col-span-6 w-[80%]'>

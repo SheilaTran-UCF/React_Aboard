@@ -27,7 +27,6 @@ function App() {
 				<Route path='/register' element={<Register />} />
 				<Route path='/StudentRegister' element={<StudentRegister />} />
 
-
 			</Routes>
 		</>
 	);

@@ -46,7 +46,7 @@ const SchoolPageFive = () => {
 					</div>
 
 					<div className='grid grid-cols-12 gap-4 p-4'>
-						{data.map(item => {
+						{data.map(item => {//jsx
 							return (
 								<>
 									<div className='col-span-4 pb-[20px]'>
